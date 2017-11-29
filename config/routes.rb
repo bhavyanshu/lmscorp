@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     collection do
       get 'alphabetically', :action => 'alphabatical_index'
       get 'with_modern_plan', :action => 'modern_index'
+      get 'not_trialing', :action => 'not_trailing_index'
     end
   end
 
