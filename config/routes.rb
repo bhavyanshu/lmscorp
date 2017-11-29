@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :company, :path => 'companies' do
     collection do
       get 'alphabetically', :action => 'alphabatical_index'
+      get 'with_modern_plan', :action => 'modern_index'
     end
   end
 
