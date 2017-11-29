@@ -26,4 +26,10 @@ class CompanyController < ApplicationController
     render :json => {:data => @companies}
   end
 
+  def last_month_index
+    # companies that registered in previous month
+    @companies = Company.where('created_at > ? AND created_at < ?', Date.today.last_month.beginning_of_month, Date.today.beginning_of_month)
+    render :json => {:data => @companies}
+  end
+
 end

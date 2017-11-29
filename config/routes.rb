@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get 'alphabetically', :action => 'alphabatical_index'
       get 'with_modern_plan', :action => 'modern_index'
       get 'not_trialing', :action => 'not_trailing_index'
+      get 'created_last_month', :action => 'last_month_index'
     end
   end
 
